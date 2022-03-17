@@ -1,0 +1,25 @@
+### System definition:			!! NOTE: Only binary systems allowed - API (component 1) and polymer (component 2)
+	NPX_PVPVAc64			!! Title (arbitrary)	
+	230.3	65000.0			!! Mw_API | Mw_polymer [g/mol]
+	1 2				!! Number of API subcomponents | Number of polymer subcomponents (e.g., an API always has 1 subcomponent, PLGA has 3 subcomponents: PLLA, PDLA, PGA)
+	0.01918 4.1142 	470.92 	1202.652 	0.009524 	4 	2 	2 	230.3 	1.0 ! NPX-PS4	!! m/M_w | sigma | epsk | epsk_hb | k_hb | N_hb | N_don | N_acc | M_w_mono | weight_frac
+	0.04070	2.7100	205.599	0		0.020		2600	1300	1300	111.0	0.6 ! PVP (Prudic)
+	0.03211	3.3970	204.65	0		0.020		0	0	0	86.1	0.4 ! PVAc (Prudic)
+	2				!! Total number of different non-zero k_ij values between API and polymer subcomponents (the others are zero)
+	1 1 2 1 0.0			!! component1 | subcomponent1 | component2 | subcomponent2 | k_ij value (NOTE: component1 <= component2)
+	1 1 2 2 0.0			!! component1 | subcomponent1 | component2 | subcomponent2 | k_ij value (NOTE: component1 <= component2)
+### Definition of SLE calculation:
+	.true.				!! Calculate SLE = .true./.false.
+	429.93 32.40 99.3 0.0 ! NPX-1	!! T_fus(K) | H_fus(kJ/mol) | Cp_fus_a_fit(J/K/mol) | Cp_fus_bT_fit(J/K^2/mol) (of API)
+	.false.				!! Include experimental SLE data = .true./.false.
+	.false.				!! Optimize k_ij = .true./.false. (set to .true. only if experimental SLE data is included)
+	1				!! Number of different k_ij(s) to be optimized (1 = homopolymers; 2 = PVPVAc and PLGA copolymers)
+	-0.100 0.100 1.E-3		!! k_ij_min | k_ij_max | k_ij_step
+	300.0	429.93	2.0		!! T_min | T_max | T_step (T range in K for which SLE curve(s) will be calculated in addition to T_exp)
+### Definition of LLE calculation:
+	.false.				!! Calculate LLE = .true./.false.
+	.false.				!! Print LLE calculation progress = .true./.false.
+	1.E-10 1.E-03		!! Initial guess for spinodal points (x_poly in mole fraction in polymer-lean phase | w_poly in polymer-rich phase)
+	300.0	500.0	50.0	!! T_min | T_max | T_step (T range in K for which LLE curve(s) will be calculated)
+
+

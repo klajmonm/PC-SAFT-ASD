@@ -1,0 +1,28 @@
+### System definition:			!! NOTE: Only binary systems allowed - API (component 1) and polymer (component 2)
+	IBU_PLGA75			!! Title (arbitrary)	
+	206.3	12900.0			!! Mw_API | Mw_polymer [g/mol]
+	1 3				!! Number of API subcomponents | Number of polymer subcomponents (e.g., an API always has 1 subcomponent, PLGA has 3 subcomponents: PLLA, PDLA, PGA)
+	0.02636	4.0179	309.40	516.4691	0.089457	4 2 2	206.3	1.0 	! IBP-PS4	!! m/M_w | sigma | epsk | epsk_hb | k_hb | N_hb | N_don | N_acc | M_w_mono | weight_frac
+	0.04545	2.9200	230.0 	0 		0 		0 0 0	72.0	0.394 	! PLLA
+	0.03699	3.1200	240.0 	0 		0 		0 0 0	72.0	0.394 	! PDLA
+	0.03130	2.8600	233.9 	0 		0 		0 0 0	58.0	0.212 	! PGA
+	3				!! Total number of different non-zero k_ij values between API and polymer subcomponents (the others are zero)
+	1 1 2 1 0.0			!! component1 | subcomponent1 | component2 | subcomponent2 | k_ij value (NOTE: component1 <= component2)
+	1 1 2 2 0.0			!! component1 | subcomponent1 | component2 | subcomponent2 | k_ij value (NOTE: component1 <= component2)
+	1 1 2 3 0.0			!! component1 | subcomponent1 | component2 | subcomponent2 | k_ij value (NOTE: component1 <= component2)
+### Definition of SLE calculation:
+	.true.				!! Calculate SLE = .true./.false.
+	348.71 26.40 176.1644 -0.3449480 ! IBU-I	!! T_fus(K) | H_fus(kJ/mol) | Cp_fus_a_fit(J/K/mol) | Cp_fus_bT_fit(J/K^2/mol) (of API)
+	.true.				!! Include experimental SLE data = .true./.false.
+	.true.				!! Optimize k_ij = .true./.false. (set to .true. only if experimental SLE data is included)
+	2				!! Number of different k_ij(s) to be optimized (1 = homopolymers; 2 = PVPVAc and PLGA copolymers)
+	0.020 0.040 2.E-3		!! k_ij_min | k_ij_max | k_ij_step
+	0.030 0.050 2.E-3		!! k_ij_min | k_ij_max | k_ij_step
+	250.0	348.71	2.0		!! T_min | T_max | T_step (T range in K for which SLE curve(s) will be calculated in addition to T_exp)
+### Definition of LLE calculation:
+	.true.				!! Calculate LLE = .true./.false.
+	.false.				!! Print LLE calculation progress = .true./.false.
+	1.E-10 1.E-02			!! Initial guess for spinodal points (x_poly in mole fraction in polymer-lean phase | w_poly in polymer-rich phase)
+	250.0	370.0	10.0		!! T_min | T_max | T_step (T range in K for which LLE curve(s) will be calculated)
+
+
