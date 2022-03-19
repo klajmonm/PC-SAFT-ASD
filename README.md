@@ -3,7 +3,7 @@ Phase equilibria calculations with PC-SAFT: SLE and LLE in ASDs
 
 version 2022.03-testing
 
-klajmonm@vscht.cz; 2022-03-17
+klajmonm@vscht.cz; 2022-03-19
 
 
 General and new features:
@@ -41,10 +41,10 @@ Tips and tricks:
 -	If LLE is not calculated, try to change the initial guess for spinodal point in polymer-rich phase (1E-05/1E-04/1E-03/1E-02/1E-01) in Input_ASD.inp. That in polymer-lean phase (1E-10) proved to be robust across different systems and conditions. Set-up of LLE calculation can further be modified by changes in the code (contact martin.klajmon@vscht.cz)
 
 Examples:
-- Ex_01_IND_PVPK12 (homopolymer): SLE calculation with known nonzero kij (i.e., without kij optimization) [inspired by https://doi.org/10.1021/acs.molpharmaceut.0c01232]
-- Ex_02_NPX_PVPVAc (copolymer): SLE calculation with kij = 0 (pure prediction) [inspired by https://doi.org/10.1021/mp500412d]
-- Ex_03_IBU_HPMCAS (pseudo-homopolymer): kij optimization, SLE and LLE calculation with both kij = 0 and optimized kij [inspired by https://doi.org/10.1016/j.ijpharm.2020.119845]
-- Ex_04_IBU_PLGA75 (copolymer): kij optimization, SLE and LLE calculation with both kij = 0 and optimized kij 
+- Ex1_IND_PVPK12 (homopolymer): SLE calculation with known nonzero kij (i.e., without kij optimization) [inspired by https://doi.org/10.1021/acs.molpharmaceut.0c01232]
+- Ex2_NPX_PVPVAc (copolymer): SLE calculation with kij = 0 (pure prediction) [inspired by https://doi.org/10.1021/mp500412d]
+- Ex3_IBU_HPMCAS (pseudo-homopolymer): kij optimization, SLE and LLE calculation with both kij = 0 and optimized kij [inspired by https://doi.org/10.1016/j.ijpharm.2020.119845]
+- Ex4_IBU_PLGA75 (copolymer): kij optimization, SLE and LLE calculation with both kij = 0 and optimized kij 
 
 
 Warning: Do not share the code with anyone outside our groups
