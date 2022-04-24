@@ -1,9 +1,9 @@
 # PC-SAFT-ASD
 Phase equilibria calculations with PC-SAFT: SLE and LLE in ASDs
 
-version 2022.03-testing
+version 2022.04-testing
 
-klajmonm@vscht.cz; 2022-03-19
+klajmonm@vscht.cz; 2022-04-24
 
 
 General and new features:
@@ -29,7 +29,7 @@ Output files:
 (Known) limitations:
 -	APIs – without limitation (but API parameters must be available)
 -	Polymers – homopolymer approach without limitation (but homopolymer parameters must be available)
--	Copolymer approach – only for PVPVAc and PLGA copolymers due to individual modeling treatment reqiured for each copolymer. Any new copolymer must be explicitly implemented to the code
+-	Copolymer approach – only for PVPVAc, EUDRAGIT L100-55, and PLGA copolymers due to individual modeling treatment reqiured for each copolymer. Any new copolymer must be explicitly implemented to the code
 
 Tips and tricks:
 - New logical variables in Input_ASD.inp allows for activating/ignoring specific calculation procedures (e.g., Calculate LLE = .true./.false., Optimize k_ij = .true./.false., etc.) 
