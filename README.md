@@ -48,6 +48,7 @@ klajmonm@vscht.cz; 2022-04-24
 
 ## Last Updates
 - 2022-04-25; version 2022.04-testing: Copolymer type "EUDRAGIT L100-55" included
+- 2022-03-18; version 2022.03-testing: First version
 
 ## Warning
 Do not share the code with anyone outside our groups
