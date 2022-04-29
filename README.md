@@ -24,7 +24,7 @@ klajmonm@vscht.cz; 2022-04-26
 -	log_file.log – includes intermediate results and WARNING/ERROR messages
 -	Calc_data_SLE.dat – structure explained in the file itself (concentrations in weight fraction)
 -	Calc_data_LLE.dat – structure explained in the file itself (concentrations in weight fraction)
--	Both Calc_data_SLE.dat and Calc_data_LLE.dat can be plotted using Gnuplot (version <= 4.6) with the attached script plot_Calc_data_ASD.plt
+-	Both Calc_data_SLE.dat and Calc_data_LLE.dat can be plotted using Gnuplot with the attached script plot_Calc_data_ASD.plt (adapted to Gnuplot version 4.6)
 
 ## (Known) limitations
 -	APIs – without limitation (but API parameters must be available)
