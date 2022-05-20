@@ -29,7 +29,8 @@ klajmonm@vscht.cz; 2022-04-29
 ## (Known) limitations
 -	APIs – without limitation (but API parameters must be available)
 -	Polymers – homopolymer approach without limitation (but homopolymer parameters must be available)
--	Copolymer approach – only for PVPVAc, EUDRAGIT L100-55, and PLGA copolymers due to individual modeling treatment reqiured for each copolymer. Any new copolymer must be explicitly implemented to the code
+-	Copolymer approach – only for PVPVAc, EUDRAGIT L100-55, and PLGA copolymers due to individual modeling treatment reqiured for each copolymer. Any new copolymer must be explicitly implemented to the code. Please contact klajmonm@vscht.cz before calculating with the copolymer approach!
+-	
 
 ## Tips and tricks
 - New logical variables in Input_ASD.inp allows for activating/ignoring specific calculation procedures (e.g., Calculate LLE = .true./.false., Optimize k_ij = .true./.false., etc.) 
