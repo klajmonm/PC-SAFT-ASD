@@ -18,7 +18,7 @@ klajmonm@vscht.cz; 2022-05-20
 
 ## Input files
 -	Input_ASD.inp – structure explained in the file itself (note that m/Mw is used instead of m in PC-SAFT parameter sets)
--	Exp_data_SLE.dat – only if exp. SLE data exists; structure:   T/K | w_{API} | statistical weight
+-	Exp_data_SLE.dat – only if exp. SLE data exists; structure:   T/K | wAPI | statistical weight
 
 ## Output files
 -	log_file.log – includes intermediate results and WARNING/ERROR messages
