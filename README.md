@@ -35,7 +35,7 @@ klajmonm@vscht.cz; 2022-05-20
 ## Tips and tricks
 - New logical variables in Input_ASD.inp allows for activating/ignoring specific calculation procedures (e.g., Calculate LLE = .true./.false., Optimize k_ij = .true./.false., etc.) 
 -	User-defined kij(s) allows for running pure prediction (kij = 0) and correlation (kij optimization) calculations in a single run
--	Since it is fully controlled by Input_ASD.inp, you can ignore downloading and compiling source codes (.f90). Instead, you can directly run PC-SAFT-ASD_v2022.03-testing.exe (Windows) or PC-SAFT-ASD_v2022.03-testing.prog (Linux) 
+-	Since it is fully controlled by Input_ASD.inp, you can ignore downloading and compiling source codes (.f90). Instead, you can directly run PC-SAFT-ASD_v*.exe (Windows) or PC-SAFT-ASD_v*.prog (Linux) 
 -	Note that running directly PC_SAFT_ASD.exe (i.e., without debugging) can be significantly faster than running the program via Visual Studio with debugging
 -	Optimization of two kijs can be costly. Try first a coarser kij step (e.g., 1E-02). Otherwise, migration of the calculation e.g. to Altix may also be beneficial
 -	LLE – a very sensitive calculation – its progress and WARNING/ERROR messages are printed directly to the screen in addition to log_file.log (you can suppress printing these messages by setting Print LLE calculation progress = .false. in Input_ASD.inp)	
