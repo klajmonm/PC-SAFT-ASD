@@ -3,7 +3,7 @@ Phase equilibria calculations with PC-SAFT: SLE and LLE in ASDs
 
 version 2022.04-testing
 
-klajmonm@vscht.cz; 2022-04-29
+klajmonm@vscht.cz; 2022-05-20
 
 
 ## General and new features
