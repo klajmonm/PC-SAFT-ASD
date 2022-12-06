@@ -15,7 +15,7 @@ klajmonm@vscht.cz; 2022-12-06
 -	Copolymer approach included
 -	SLE
 -	LLE 
-- kij optimization against experimental SLE data
+- *kij* optimization against experimental SLE data
 -	Calculations with both user-defined and optimized *kij*(s) possible in a single run
 -	Input and output solubility/miscibility data directly in **weight fraction (*w*API)** instead of mole fraction (*x*API)
 
@@ -36,10 +36,10 @@ klajmonm@vscht.cz; 2022-12-06
 
 ## Tips and tricks
 - New logical variables in Input_ASD.inp allows for activating/ignoring specific calculation procedures (e.g., Calculate LLE = .true./.false., Optimize *k_ij* = .true./.false., etc.) 
--	User-defined kij(s) allows for running pure prediction (*kij* = 0) and correlation (kij optimization) calculations in a single run
+-	User-defined *kij*(s) allows for running pure prediction (*kij* = 0) and correlation (*kij* optimization) calculations in a single run
 -	Since it is fully controlled by Input_ASD.inp, you can ignore downloading and compiling source codes (.f90). Instead, you can directly run PC-SAFT-ASD_v*.exe (Windows) or PC-SAFT-ASD_v*.prog (Linux) 
 -	Note that running directly PC_SAFT_ASD.exe (i.e., without debugging) can be significantly faster than running the program via Visual Studio with debugging
--	Optimization of two kijs can be costly. Try first a coarser kij step (e.g., 1E-02). Otherwise, migration of the calculation e.g. to Altix may also be beneficial
+-	Optimization of two *kij*s can be costly. Try first a coarser *kij* step (e.g., 1E-02). Otherwise, migration of the calculation e.g. to Altix may also be beneficial
 -	LLE – a very sensitive calculation – its progress and WARNING/ERROR messages are printed directly to the screen in addition to log_file.log (you can suppress printing these messages by setting Print LLE calculation progress = .false. in Input_ASD.inp)	
 -	If LLE is not calculated, try to change the initial guess for spinodal point in polymer-rich phase (1E-05/1E-04/1E-03/1E-02/1E-01) in Input_ASD.inp. That in polymer-lean phase (1E-10) proved to be robust across different systems and conditions. Set-up of LLE calculation can further be modified by changes in the code (contact martin.klajmon@vscht.cz)
 
