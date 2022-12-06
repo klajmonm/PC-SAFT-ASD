@@ -11,7 +11,7 @@ klajmonm@vscht.cz; 2022-12-06
 
 ## General and new features
 - Everything is controlled by the input file Input_ASD.inp (i.e., no changes needed in the code)
-- Only binary ASD systems allowed (i.e., API (1) + polymer (2))
+- Only binary ASD systems allowed [i.e., API (1) + polymer (2)]
 -	Copolymer approach included
 -	SLE
 -	LLE 
