@@ -17,6 +17,6 @@
 ### Definition of LLE calculation:
 	.true.				!! Calculate LLE = .true./.false.
 	.true.				!! Print LLE calculation progress = .true./.false.
-	1.E-10 1.E-03			!! Initial guess for spinodal points (x_poly in mole fraction in polymer-lean phase | w_poly in polymer-rich phase
+	1.E-10 1.E-03			!! Initial guess for spinodal points (x_poly in mole fraction in polymer-lean phase | x_poly in polymer-rich phase
 	220.0	380.0	20.0		!! T_min | T_max | T_step (T range in K for which LLE curve(s) will be calculated)
 
